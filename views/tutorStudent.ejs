@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Tutor Student</title>
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<!-- css sheet -->
+		<link rel="stylesheet" href="css/tutorStudent.css">
+	</head>
+	<body>
+		<div class="limiter">
+			<div class="container-table100">
+				<div class="wrap-table100">
+					<div class="table100">
+						<table>
+							<thead>
+								<tr class="table100-head">
+									<th class="column1">Date/Time</th>
+									<th class="column2">User</th>
+									<th class="column3">Subject</th>
+									<th class="column4">Price</th>
+									<th class="column5">Quantity</th>
+									<th class="column6">Total</th>
+								</tr>
+							</thead>
+							<tbody>
+									<%var num = 1%>
+									<%  foundMssgs.forEach(function(pair){ %>
+										<tr>
+											<td class="column1"><%=pair.msgObj.mssgSendTime%></td>
+											<td class="column2"><%=pair.msgObj.senderUsername%></td>
+											<td class="column3"><%=pair.msgObj.subject%></td>
+											<td class="column4"><%=pair.userObj.age%></td>
+											<td class="column5">1</td>
+											<td class="column6">$999.00</td>
+										</tr>
+										<%num = num + 1%>
+									  <%  }) %>
+
+
+
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+	</body>
+</html>
